@@ -1,0 +1,170 @@
+openapi: 3.0.0
+info:
+  title: Localscope Example API
+  version: 1.0.0
+  description: This project is a simple and basic example of an API. The project is also a simple coding challenge that we use in Localscope for our new backend developers.
+servers:
+  - url: https://example-api.localscope.dev/api
+    description: Development server
+paths:
+  /programmers:
+    get:
+      tags:
+        - Programmers
+      summary: Get a list of all programmers
+      responses:
+        '200':
+          description: ""
+    post:
+      tags:
+        - Programmers
+      summary: Create a new programmer
+      responses:
+        '200':
+          description: ""
+  /programmers/{id}:
+    get:
+      tags:
+        - Programmers
+      summary: Get a programmer
+      responses:
+        '200':
+          description: ""
+      parameters:
+        - name: id
+          in: path
+          description: Programmer id
+          required: true
+          schema:
+            type: integer
+    put:
+      tags:
+        - Programmers
+      summary: Update a programmer
+      responses:
+        '200':
+          description: ""
+      parameters:
+        - name: id
+          in: path
+          description: Programmer id
+          required: true
+          schema:
+            type: integer
+    delete:
+      tags:
+        - Programmers
+      summary: Delete a programmer
+      responses:
+        '200':
+          description: ""
+      parameters:
+        - name: id
+          in: path
+          description: Programmer id
+          required: true
+          schema:
+            type: integer
+  /programmers/{id}/assign-project/{projectId}:
+    post:
+      tags:
+        - Programmers
+      summary: Assign a project to the programmer
+      responses:
+        '200':
+          description: ""
+      parameters:
+        - name: id
+          in: path
+          description: Programmer id
+          required: true
+          schema:
+            type: integer
+        - name: projectId
+          in: path
+          description: Project id
+          required: true
+          schema:
+            type: integer
+  /programmers/{id}/remove-project/{projectId}:
+    post:
+      tags:
+        - Programmers
+      summary: Remove a project from the programmer
+      responses:
+        '200':
+          description: ""
+      parameters:
+        - name: id
+          in: path
+          description: Programmer id
+          required: true
+          schema:
+            type: integer
+        - name: projectId
+          in: path
+          description: Project id
+          required: true
+          schema:
+            type: integer
+            
+  /projects:
+    get:
+      tags:
+        - Projects
+      summary: Get a list of all projects
+      responses:
+        '200':
+          description: ""
+    post:
+      tags:
+        - Projects
+      summary: Create a new project
+      responses:
+        '200':
+          description: ""
+  /projects/{id}:
+    get:
+      tags:
+        - Projects
+      summary: Get a project
+      responses:
+        '200':
+          description: ""
+      parameters:
+        - name: id
+          in: path
+          description: Project id
+          required: true
+          schema:
+            type: integer
+    put:
+      tags:
+        - Projects
+      summary: Update a project
+      responses:
+        '200':
+          description: ""
+      parameters:
+        - name: id
+          in: path
+          description: Project id
+          required: true
+          schema:
+            type: integer
+    delete:
+      tags:
+        - Projects
+      summary: Delete a project
+      responses:
+        '200':
+          description: ""
+      parameters:
+        - name: id
+          in: path
+          description: Project id
+          required: true
+          schema:
+            type: integer
+            
+            

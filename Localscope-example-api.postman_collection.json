@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "f1f04a6c-6dff-4e90-812c-43bf95a5a7a7",
+		"name": "Localscope - Backend Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Programmers",
+			"item": [
+				{
+					"name": "Get programmers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/programmers",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"programmers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get programmer",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/programmers/1",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"programmers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create programmer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/programmers?name=Developer Name&email=test-name@localscope.dev",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"programmers"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Developer Name"
+								},
+								{
+									"key": "email",
+									"value": "test-name@localscope.dev"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update programmer",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/programmers/3?name=john updated&email=johnupdated@localscope.dev",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"programmers",
+								"3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "john updated"
+								},
+								{
+									"key": "email",
+									"value": "johnupdated@localscope.dev"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete programmer",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/programmers/1",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"programmers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Programmer assign project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/programmers/2/assign-project/1",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"programmers",
+								"2",
+								"assign-project",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Programmer remove project",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{Domain}}/api/programmers/1/remove-project/1",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"programmers",
+								"1",
+								"remove-project",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Get projects",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/projects",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get project",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/projects/1",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"projects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/projects?title=Project 2&startDate=2022-04-30&deadLineDate=2022-08-30&budget=80000",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"projects"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Project 2"
+								},
+								{
+									"key": "startDate",
+									"value": "2022-04-30"
+								},
+								{
+									"key": "deadLineDate",
+									"value": "2022-08-30"
+								},
+								{
+									"key": "budget",
+									"value": "80000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update project",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/projects/3?title=Project 3&startDate=2020-04-30&deadLineDate=2020-08-30&budget=80000",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"projects",
+								"3"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Project 3"
+								},
+								{
+									"key": "startDate",
+									"value": "2020-04-30"
+								},
+								{
+									"key": "deadLineDate",
+									"value": "2020-08-30"
+								},
+								{
+									"key": "budget",
+									"value": "80000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete project",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Domain}}/api/projects/1",
+							"host": [
+								"{{Domain}}"
+							],
+							"path": [
+								"api",
+								"projects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Domain",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+}

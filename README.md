@@ -1,7 +1,11 @@
 
 # Localscope API Example Project - Built with Laravel PHP
 
-This project is a simple and basic example of an API. The project is also a simple coding challenge that we use in Localscope for our new backend developers. You can clone it and use it in any way you want. Below, you can also find the coding challenge description and instructions.
+This project is a simple and basic example of an API. The project is also a simple coding challenge that we use in Localscope for our new backend developers. You can clone it and use it in any way you want or try some requests using Postman. Below, you can also find the coding challenge description and instructions.
+
+- Test Server: https://example-api.localscope.dev
+- API Docs: https://example-api.localscope.dev/api-documentation.html
+- OpenAPI specification: https://example-api.localscope.dev/openapi.yaml
 
 ## Install
 
@@ -27,7 +31,7 @@ Design a public API for a project tracker app. Programmers can have multiple pro
 #### Tasks
 
  - Create programmers model. Programmers have ‘name’ & ’email’ fields.
- -  Create project model. Projects have ‘title’, ‘startDate’, ‘deadLineDate’ & ‘budget’
+ - Create project model. Projects have ‘title’, ‘startDate’, ‘deadLineDate’ & ‘budget’
  - Create programmers endpoint for getting a list of all the programmers. 
  - Create programmer CRUD endpoints.
  - Create projects endpoint for getting a list of all the projects. 
